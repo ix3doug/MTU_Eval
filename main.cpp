@@ -6,17 +6,19 @@ int main() {
 
     std::cout << "Enter an Integer:\n";
 
-    std::cin >> int1;
+    if (!(std::cin >> int1))
+        return 0;
 
     while (true) {
 
-        std::cout << "\nEnter an Integer\n";
+        std::cout << "\nEnter an Integer:\n";
 
-        std::cin >> int2;
+        if (!(std::cin >> int2))
+            return 0;
 
         if (int2 > int1)
             std::cout << "Higher";
-        else
+        else if (int2 < int1)
             std::cout << "Lower";
 
         int1 = int2;
