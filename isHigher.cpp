@@ -1,27 +1,28 @@
 #include <iostream>
 
-int main() {
-
-    int int1{}, int2{};
+int main()
+{
+    int aValue{}, comparisonValue{};
 
     std::cout << "Enter an Integer:\n";
 
-    if (!(std::cin >> int1))
-        return 0;
+    if (!(std::cin >> aValue))
+        return 1;
 
-    while (true) {
-
+    while (true)
+    {
         std::cout << "\nEnter an Integer:\n";
 
-        if (!(std::cin >> int2))
+        if (!(std::cin >> comparisonValue))
+            return 1;
+
+        if (comparisonValue <= 0)
             return 0;
+        else if (comparisonValue > aValue)
+            std::cout << "increasing";
+        else if (comparisonValue < aValue)
+            std::cout << "not increasing";
 
-        if (int2 > int1)
-            std::cout << "Higher";
-        else if (int2 < int1)
-            std::cout << "Lower";
-
-        int1 = int2;
+        aValue = comparisonValue;
     }
-
 }

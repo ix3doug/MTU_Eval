@@ -3,5 +3,6 @@ project(MTU_Eval)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(MTU_Eval main.cpp
-        isHigher.cpp)
+add_executable(bridge main.cpp)
+
+add_executable(isHigher isHigher.cpp)
