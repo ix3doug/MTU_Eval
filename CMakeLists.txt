@@ -10,3 +10,5 @@ add_executable(isHigher isHigher.cpp)
 add_executable(ageStatus ageStatus.cpp)
 
 add_executable(oddSum oddSum.cpp)
+
+add_executable(arrayXS arrayXS.cpp)
