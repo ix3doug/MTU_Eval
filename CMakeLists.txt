@@ -6,4 +6,7 @@ set(CMAKE_CXX_STANDARD 26)
 add_executable(bridge main.cpp)
 
 add_executable(isHigher isHigher.cpp)
+
 add_executable(ageStatus ageStatus.cpp)
+
+add_executable(oddSum oddSum.cpp)
