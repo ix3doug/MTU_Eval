@@ -24,4 +24,7 @@ int main()
 
         aValue = comparisonValue;
     }
+
+    return 0;
+
 }
