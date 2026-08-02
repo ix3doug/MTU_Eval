@@ -12,3 +12,5 @@ add_executable(ageStatus ageStatus.cpp)
 add_executable(oddSum oddSum.cpp)
 
 add_executable(arrayXS arrayXS.cpp)
+
+add_executable(printNumPair printNumPair.cpp)
